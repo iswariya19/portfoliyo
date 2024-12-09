@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 class="logo"><span>ISWARIYA</span></h1>
+          <ul id="sidemenu">
+            <li><a href="#header">home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>FrontEnd Developer</p>
+          <h1>Hi, Im <span>iswariya</span><br />From Bhuvanagiri</h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1"><img src="img/pg.avif" alt="" /></div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi, I'm <span>Iswariya</span> from Bhuvanagiri. I recently
+              completed my MCA from Annamalai University with a CGPA of 8.1 and
+              my BCA from Thiruvalluvar University with 86%. I have experience
+              working as a data feeding operator in a Taluk office and a 6-month
+              internship as a frontend developer at Apptidue Studio. I developed
+              a mobile billing application as part of my final year project. My
+              technical skills include
+              <span>React Native, HTML, and CSS,</span> with a strong focus on
+              designing user-friendly interfaces.I also have a foundational
+              knowledge of Python, SQL, and JavaScript, which I use to develop
+              logic, work with databases, and enhance web functionality. I come
+              from a supportive family—my father runs a hotel business, and my
+              mother is a homemaker. I enjoy learning new technologies and
+              exploring creative design ideas. My goal is to grow as a software
+              developer and contribute to building innovative solutions in the
+              tech industry.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li>
+                  <span>Frontend Development:</span><br />React Native, HTML,
+                  CSS
+                </li>
+                <li>
+                  <span>Programming Languages:</span><br />Python, JavaScript
+                </li>
+                <li>
+                  <span>Database Management:</span><br />
+                  SQL
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span>User-Friendly Interface:</span><br />Designed a
+                  responsive and easy-to-navigate layout using React Native,
+                  ensuring seamless user experience on both Android and iOS.And
+                  also experience in html,css to ensure compatibility with
+                  various screen sizes, including desktops, tablets, and
+                  mobiles.
+                </li>
+                <li>
+                  <span>Dynamic Billing:</span><br />Enabled users to generate
+                  and manage bills dynamically with real-time tax and discount
+                  calculations.
+                </li>
+                <li>
+                  <span>Local Storage:</span><br />Integrated MySQL to store
+                  customer and product data securely on the device.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>Master of Computer Applications (MCA)</span
+                  ><br />Annamalai University,<br />Chidambaram <br />
+                  CGPA: 8.1 <br />
+                  Year: [2021-2023]
+                </li>
+                <li>
+                  <span>Bachelor of Computer Applications (BCA)</span
+                  ><br />Thiruvalluvar University, <br />Vellore <br />
+                  Percentage: 86%
+                  <br />
+                  Year: [2018-2021]
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Mobile App Development</h2>
+            <p>
+              Building basic mobile apps using React Native for Android and iOS.
+              Creating user-friendly and responsive interfaces. Knowledge of SQL
+              for storing and managing data. Using Python for simple data
+              analysis and small automation tasks.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Web Design and Development</h2>
+            <p>
+              Developing simple, responsive websites using HTML, CSS, and
+              JavaScript. Designing layouts for personal portfolios, blogs, or
+              small businesses.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Designing clean and simple interfaces for web and mobile
+              applications. Ensuring user-friendly navigation and good
+              aesthetics.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="Work 1" />
+            <div class="layer">
+              <h3>Personal Projects(ReactNative)</h3>
+
+              <p>
+                Developed a mobile billing app for Android and iOS, offering
+                bill tracking, transactions, and responsive user interface
+                design.
+              </p>
+              <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="Work 2" />
+            <div class="layer">
+              <h3>Web Design Projects (HTML/CSS)</h3>
+
+              <p>
+                Designed responsive websites using HTML/CSS, focusing on clean,
+                mobile-friendly layouts with forms, navigation, and media
+                queries for responsiveness.
+              </p>
+              <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="Work 3" />
+            <div class="layer">
+              <h3>Personal Portfolio Website</h3>
+
+              <p>
+                Technology Used: HTML, CSS, JavaScript Description: Developed a
+                responsive personal portfolio website to showcase skills,
+                projects, and achievements.
+              </p>
+              <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="but">
+          <a href="#" class="btn"> See More</a>
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>iswariya1905@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>9940860814</p>
+            <div class="social-icons">
+              <a href="https://wa.me/<9940860814>"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <!-- <a href=""><i class="fab fa-twitter-square"></i></a> -->
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download="" class="btn btn2"
+              >Dowmload CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="831383ef-fd1b-480c-b386-efce8ae0269c"
+              />
+              <input type="text" name="Name" placeholder="Your name" required />
+
+              <input
+                type="email"
+                name="email"
+                placeholder="your email"
+                required
+              />
+
+              <textarea
+                type="Message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+              <button type="submit" class="btn btn2">submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright iswariya.made with by <i class="fas fa-heart"></i> easy</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        // Loop through tablinks to remove "active-link" class
+        for (var tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        // Loop through tabcontents to remove "active-tab" class
+        for (var tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        // Add "active-link" to the clicked tablink
+        event.currentTarget.classList.add("active-link");
+
+        // Add "active-tab" to the corresponding tab content
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
